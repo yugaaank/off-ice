@@ -1,0 +1,9 @@
+/target/
+zed/
+zed_crates/
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+/tmp/

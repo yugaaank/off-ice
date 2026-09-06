@@ -1,0 +1,32 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/office_core",
+    "crates/office_ui",
+    "crates/office",
+]
+default-members = ["crates/office"]
+
+[workspace.package]
+publish = false
+edition = "2024"
+license = "GPL-3.0-or-later"
+
+[workspace.dependencies]
+gpui = { git = "https://github.com/zed-industries/zed", rev = "5a9b9558db01a6b906cec2fb70a797affdc58cdd", features = ["wayland"] }
+gpui_platform = { git = "https://github.com/zed-industries/zed", rev = "5a9b9558db01a6b906cec2fb70a797affdc58cdd", features = ["wayland"] }
+gpui_tokio = { git = "https://github.com/zed-industries/zed", rev = "5a9b9558db01a6b906cec2fb70a797affdc58cdd" }
+gpui_util = { git = "https://github.com/zed-industries/zed", rev = "5a9b9558db01a6b906cec2fb70a797affdc58cdd" }
+gpui_macros = { git = "https://github.com/zed-industries/zed", rev = "5a9b9558db01a6b906cec2fb70a797affdc58cdd" }
+ui = { git = "https://github.com/zed-industries/zed", rev = "5a9b9558db01a6b906cec2fb70a797affdc58cdd" }
+anyhow = "1.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
+schemars = "1"
+log = "0.4"
+office_core = { path = "crates/office_core" }
+office_ui = { path = "crates/office_ui" }
+office = { path = "crates/office" }
+theme_settings = { git = "https://github.com/zed-industries/zed", rev = "5a9b9558db01a6b906cec2fb70a797affdc58cdd" }
+theme = { git = "https://github.com/zed-industries/zed", rev = "5a9b9558db01a6b906cec2fb70a797affdc58cdd" }

@@ -1,0 +1,21 @@
+[package]
+name = "office"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "office"
+path = "src/main.rs"
+
+[dependencies]
+office_core = { workspace = true }
+office_ui = { workspace = true }
+gpui = { workspace = true }
+gpui_platform = { workspace = true }
+gpui_tokio = { workspace = true }
+ui = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+theme = { workspace = true }
